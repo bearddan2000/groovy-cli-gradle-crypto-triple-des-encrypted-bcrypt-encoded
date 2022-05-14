@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.codehaus.groovy:groovy-all:3.0.7'
+	implementation 'javax.xml.bind:jaxb-api:2.3.1'
+	implementation "org.mindrot:jbcrypt:0.4"
+}
+
+mainClassName = 'example.Main'
